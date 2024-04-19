@@ -2,7 +2,7 @@
 
 ### Introduction
 Welcome to my repository where I document my progress through the Spring Boot course designed for beginners. This course is aimed at helping learners build a solid foundation in Spring Boot, enabling them to apply this knowledge in real-world software development.
-Throughout my career, I've had the opportunity to interface with Spring on various projects, which sparked my interest in its robust capabilities. Keen to deepen my understanding and master its extensive features, I decided to pursue this Spring Boot course to refine my skills and broaden my technical expertise in building modern, scalable applications.
+I've had the opportunity to interface with Spring Boot in my career, which sparked my interest in its robust capabilities. Keen to deepen my understanding and master its extensive features, I decided to pursue this Spring Boot course to refine my skills and broaden my technical expertise in building modern, scalable applications.
 
 ### Course Overview
 
