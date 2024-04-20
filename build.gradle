@@ -26,6 +26,29 @@ tasks.named('bootBuildImage') {
 	builder = 'paketobuildpacks/builder-jammy-base:latest'
 }
 
-tasks.named('test') {
-	useJUnitPlatform()
+// tasks.named('test') {
+// 	useJUnitPlatform()
+// }
+tasks.named('test', Test) {
+    // Use TestNG or JUnit; uncomment the appropriate line or adjust according to your project setup:
+    // useTestNG()
+    useJUnitPlatform()
+
+    // Configure the logging options for the test task
+    testLogging {
+        // Specify what events to log. This setup logs passed, skipped, and failed tests.
+        events 'passed', 'skipped', 'failed'
+
+        // Show standard out and standard error of the test JVM(s) on the console.
+        showStandardStreams = false
+
+        // Options for how exceptions are shown: 'short', 'full' (default), 'minimal'
+        exceptionFormat = 'full'
+    }
+
+    // Additional configuration to make sure the console mode is conducive to showing real-time test results.
+    outputs.upToDateWhen { false }  // Always run tests even if inputs haven't changed.
+
+    // Explicitly configure test task to always run
+    outputs.upToDateWhen { false }
 }
